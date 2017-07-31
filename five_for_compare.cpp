@@ -71,3 +71,7 @@ int main()
 // 73ms
 // 72ms
 // 72ms
+
+// reference:
+// https://www.zhihu.com/question/28127777
+// http://blog.csdn.net/zzq060143/article/details/54409730
