@@ -41,3 +41,11 @@ int main()
 
 	return 0;
 }
+
+// environment: win7 64bit, 16G RAM, VS2017
+//
+// reslut:
+// priority_queue push: 36ms
+// priority_queue pop: 183ms
+// set insert: 737ms
+// set pop: 153ms
