@@ -16,6 +16,7 @@
 #include <cstring>
 #include <cstdlib>
 #include <cstdint>
+#include <ctime>
 #include <cmath>
 #define umap unordered_map
 #define uset unordered_set
