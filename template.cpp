@@ -16,7 +16,6 @@
 #include <cstring>
 #include <cstdlib>
 #include <cstdint>
-#include <ctime>
 #include <cmath>
 #define umap unordered_map
 #define uset unordered_set
@@ -26,15 +25,15 @@ typedef unsigned int uint;
 using namespace std;
 
 // 打印
-#define to_str(var)                     #var" = %2d   "
-#define PRINT_1VAR(v0)                  printf(to_str(v0)"\n",v0)
-#define PRINT_2VAR(v0, v1)              printf(to_str(v0)"\t" to_str(v1)"\n",v0,v1)
-#define PRINT_3VAR(v0, v1, v2)          printf(to_str(v0)"\t" to_str(v1)"\t" to_str(v2)"\n",v0,v1,v2)
-#define PRINT_4VAR(v0, v1, v2, v3)      printf(to_str(v0)"\t" to_str(v1)"\t" to_str(v2)"\t" to_str(v3)"\n",v0,v1,v2,v3)
-#define PRINT_VECTOR(v0)                print_vector(#v0, v0)
-#define PRINT_ARRAY(v0, n)              print_array(#v0, v0, n)
+#define ss(var)                     #var" = %2d   "
+#define PRINT_1VAR(v0)              printf(ss(v0)"\n",v0)
+#define PRINT_2VAR(v0, v1)          printf(ss(v0)"\t" ss(v1)"\n",v0,v1)
+#define PRINT_3VAR(v0, v1, v2)      printf(ss(v0)"\t" ss(v1)"\t" ss(v2)"\n",v0,v1,v2)
+#define PRINT_4VAR(v0, v1, v2, v3)  printf(ss(v0)"\t" ss(v1)"\t" ss(v2)"\t" ss(v3)"\n",v0,v1,v2,v3)
+#define PRINT_VECTOR(v0)            print_vector(#v0, v0)
+#define PRINT_ARRAY(v0, n)          print_array(#v0, v0, n)
 template<class T>
-void print_vector(string name, vector<T> &vec)
+void print_vector(const string &name, vector<T> &vec)
 {
     cout << name << ": ";
     for (int i = 0; i < vec.size(); ++i)
@@ -42,7 +41,7 @@ void print_vector(string name, vector<T> &vec)
     cout << endl;
 }
 template<class T>
-void print_array(string name, T arr[], int n)
+void print_array(const string &name, T arr[], int n)
 {
     cout << name << ": ";
     for (int i = 0; i < n; ++i)
@@ -58,13 +57,13 @@ struct cmp_less
     { return a < b; }
 };
 template<class T>
-struct cmp_greater
+struct cmp_more
 {
     bool operator()(T &a, T &b)
     { return a > b; }
 };
-p_queue<int, vector<int>, cmp_less<int> >    max_heap;//top()是最大
-p_queue<int, vector<int>, cmp_greater<int> > min_heap;//top()是最小
+//p_queue<llong, vector<llong>, cmp_less<llong> > A_max_heap, B_max_heap;//top()是最大
+//p_queue<llong, vector<llong>, cmp_more<llong> > A_min_heap, B_min_heap;//top()是最小
 
 // new出来的变量 debug: (int(*)[10])a
 // new出来的变量访问时，下标一定不要越界!!!
@@ -72,7 +71,11 @@ p_queue<int, vector<int>, cmp_greater<int> > min_heap;//top()是最小
 // 整形容易正负溢出!!!
 ///////////////////////////////////////////////////////////////////////////////////////
 
+
 int main()
 {
-	return 0;
+    //freopen("/Users/xuxu/Desktop/input.in", "r", stdin);
+    //freopen("/Users/xuxu/Desktop/output.out", "w", stdout);
+
+    return 0;
 }
