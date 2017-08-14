@@ -17,12 +17,13 @@
 #include <cstdlib>
 #include <cstdint>
 #include <cmath>
+using namespace std;
+
 #define umap unordered_map
 #define uset unordered_set
 #define p_queue priority_queue
 typedef long long llong;
 typedef unsigned int uint;
-using namespace std;
 
 // 打印
 #define ss(var)                     #var" = %2d   "
