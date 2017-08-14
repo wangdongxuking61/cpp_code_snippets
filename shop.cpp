@@ -25,6 +25,7 @@ using namespace std;
 // 使用算法：动态规划
 // 时间复杂度：O(m*k*n),其中内部两个循环优化了一点点
 // 空间复杂度：O(k*n)
+// 2017.8.14 fix bug: 打印错误，应该打印和，不应打印最大值
 
 int main()
 {
@@ -60,8 +61,13 @@ int main()
         ++dp[1][p];
         price_sum += p;
     }
-    cout << *max_element(dp[k], dp[k] + n + 1) << endl;
 
+    // ****************** fis bug ******************
+    int ans = 0;
+    for (int i = 0; i <= n; ++i)
+        ans += dp[k][i];
+    cout << ans << endl;
+    // ****************** fis bug ******************
 
     for (int i = 0; i <= k; i++)
         delete[] dp[i];
