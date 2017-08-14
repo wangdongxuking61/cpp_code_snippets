@@ -19,6 +19,7 @@
 #include <cmath>
 using namespace std;
 
+// 替换
 #define umap unordered_map
 #define uset unordered_set
 #define p_queue priority_queue
@@ -63,8 +64,8 @@ struct cmp_more
     bool operator()(T &a, T &b)
     { return a > b; }
 };
-//p_queue<llong, vector<llong>, cmp_less<llong> > A_max_heap, B_max_heap;//top()是最大
-//p_queue<llong, vector<llong>, cmp_more<llong> > A_min_heap, B_min_heap;//top()是最小
+//p_queue<int, vector<int>, cmp_less<int> > max_heap;//top()是最大
+//p_queue<int, vector<int>, cmp_more<int> > min_heap;//top()是最小
 
 // new出来的变量 debug: (int(*)[10])a
 // new出来的变量访问时，下标一定不要越界!!!
