@@ -71,6 +71,7 @@ struct cmp_more
 // new出来的变量访问时，下标一定不要越界!!!
 // new出来的一定要delete!!!
 // 整形容易正负溢出!!!
+// cin和cout速度不如scanf和printf
 ///////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -78,6 +79,8 @@ int main()
 {
     //freopen("/Users/xuxu/Desktop/input.in", "r", stdin);
     //freopen("/Users/xuxu/Desktop/output.out", "w", stdout);
-
+    int n;
+    scanf("%d", &n);
+    printf("%d\n", n)
     return 0;
 }
