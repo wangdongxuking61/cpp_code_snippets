@@ -81,6 +81,6 @@ int main()
     //freopen("/Users/xuxu/Desktop/output.out", "w", stdout);
     int n;
     scanf("%d", &n);
-    printf("%d\n", n)
+    printf("%d\n", n);
     return 0;
 }
