@@ -17,6 +17,7 @@
 #include <cstdlib>
 #include <cstdint>
 #include <cmath>
+#include <cctype>
 
 using namespace std;
 
