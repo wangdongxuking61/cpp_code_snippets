@@ -25,7 +25,6 @@ using namespace std;
 #define umap unordered_map
 #define uset unordered_set
 #define p_queue priority_queue
-typedef long long llong;
 typedef unsigned int uint;
 
 // 打印
