@@ -76,6 +76,7 @@ struct cmp_more
 // new出来的一定要delete!!!
 // 整形容易正负溢出!!!(long long类型的输出是%ld，否则出错)
 // cin和cout速度不如scanf和printf,可使用sync_with_stdio优化
+// Clang编译器下，mac调试stl：set(CMAKE_CXX_FLAGS “${CMAKE_CXX_FLAGS} -stdlib=libstdc++”)
 ///////////////////////////////////////////////////////////////////////////////////////
 
 int main()
